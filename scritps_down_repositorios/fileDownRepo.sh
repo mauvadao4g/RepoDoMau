@@ -1,6 +1,6 @@
 #!/bin/bash
 # MAUDAVPN
-# VER 1.0.1
+# VER 1.0.3
 #
 clear
 
@@ -25,6 +25,8 @@ processar_repositorios() {
         
         # Extrai o nome do repositório
         repo_name=$(basename "$repo" .git)
+
+! ls REPOSITORIOS | grep -Eq "^$repo_name\b" && {
         echo "Clonando repositório: $repo_name"
 
         # Clona o repositório
@@ -42,11 +44,13 @@ processar_repositorios() {
 
         # Remove o repositório clonado para liberar espaço
         echo "Removendo pasta $repo_name"
-#        rm -rf "$repo_name"
+        rm -rf "$repo_name"
+} || echo -e "\e[1;33m$repo_name:\e[0m \e[1;35mja existe\e[0m"
     done < "$REPOS_FILE"
+
 }
 
 # Executa a função
 processar_repositorios
-
-echo "Processo concluído. Arquivos ZIP salvos em: $DESTINO"
+echo
+echo -e "\e[1;34mProcesso concluído. Arquivos ZIP salvos em:\e[0m \e[1;36m$DESTINO"
