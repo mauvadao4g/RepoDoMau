@@ -4,7 +4,7 @@
 #
 clear
 
-echo -e '\e[44;1;33mUPANDO PRO GITHUB\e0m'
+echo -e '\e[44;1;33mUPANDO PRO GITHUB\e[0m'
 echo
 
 git config --global --add safe.directory /storage/emulated/0/MAUVADAO/MAUVADAO_GITHHUB/RepoDoMau
