@@ -1,0 +1,5 @@
+https://github.com/tahabasri/snippets
+https://github.com/rafamadriz/friendly-snippets
+https://github.com/honza/vim-snippets.git
+https://github.com/estefanionsantos/snippets.git
+https://github.com/akinalibeer/vim-snipmate.git
