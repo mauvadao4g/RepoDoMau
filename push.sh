@@ -10,7 +10,7 @@ echo
 echo -e '\e[1;34m'
 git config --global --add safe.directory /storage/emulated/0/MAUVADAO/MAUVADAO_GITHHUB/RepoDoMau
 
-echo -e '\e[1;33m'
+echo -e '\e[1;30m'
 git add -A
 git commit -m "Update: $(date +%y%m%d%H%M%S)"
 git push
