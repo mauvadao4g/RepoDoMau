@@ -4,7 +4,7 @@
 echo "Fazendo push"
 echo
 
-git push
+git pull
 [[ $? == 0 ]] && {
 echo "Sucesso"
 } || {
