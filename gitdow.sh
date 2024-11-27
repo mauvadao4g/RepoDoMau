@@ -4,4 +4,16 @@
 echo "Fazendo Donwload dos arquivos do github"
 echo
 
+# Baixando os arquivos do repositorio
 git pull
+
+
+
+#
+
+
+
+
+
+
+
