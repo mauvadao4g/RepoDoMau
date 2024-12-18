@@ -37,3 +37,4 @@ https://github.com/dense-analysis/ale
 https://github.com/pangloss/vim-javascript
 https://github.com/leafgarland/typescript-vim
 https://github.com/fatih/vim-go
+https://github.com/the-alpha-developer/neovim-example-config
